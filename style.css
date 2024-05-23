@@ -1,0 +1,37 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 0 20px;
+}
+
+article {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section button {
+    text-align: center;
+}
+
+div h2, div p {
+    text-align: center;
+}

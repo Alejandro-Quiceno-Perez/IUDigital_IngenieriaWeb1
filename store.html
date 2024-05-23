@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="code.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi_primera_web</title>
+    <style>
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            width: 30%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                <path
+                    d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="newProduct.html">New product</a></li>
+                <li><a href="error.html">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Camisa para Hombre">
+            <h3>Camisa para Hombre</h3>
+            <p>Precio: $29.99</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Vestido para Mujer">
+            <h3>Vestido para Mujer</h3>
+            <p>Precio: $49.99</p>
+            <button>Agregar al Carrito</button>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200" alt="Ropa para Niños">
+            <h3>Ropa para Niños</h3>
+            <p>Precio: $19.99</p>
+            <button>Agregar al Carrito</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Tienda de Ropa</p>
+    </footer>
+
+</body>
+
+</html>
