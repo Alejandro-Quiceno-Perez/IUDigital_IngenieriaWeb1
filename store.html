@@ -5,38 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="code.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="store.css">
     <title>Mi_primera_web</title>
     <style>
-        section {
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
 
-        .product {
-            width: 30%;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            padding: 10px;
-            text-align: center;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                 class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
                 <path
                     d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
@@ -50,23 +29,82 @@
         </nav>
     </header>
     <section>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Camisa para Hombre">
-            <h3>Camisa para Hombre</h3>
-            <p>Precio: $29.99</p>
-            <button>Agregar al Carrito</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Vestido para Mujer">
-            <h3>Vestido para Mujer</h3>
-            <p>Precio: $49.99</p>
-            <button>Agregar al Carrito</button>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Ropa para Niños">
-            <h3>Ropa para Niños</h3>
-            <p>Precio: $19.99</p>
-            <button>Agregar al Carrito</button>
+        <div class="container">
+            <div class="inventory-item">
+                <img src="https://www.camiseriaeuropea.com/cdn/shop/files/Blanca002_001_1.jpg?v=1682535338"
+                    alt="Camiseta Blanca">
+                <div class="inventory-details">
+                    <h2>Camiseta Blanca</h2>
+                    <p>Precio: <span>$15.00</span></p>
+                </div>
+                <button>
+                    Comprar
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="inventory-item">
+                <img src="https://fashionspark.com/media/catalog/product/6/8/68a59782f2ba8f4c98a1ca2b6a4991.jpg?quality=100&fit=bounds&height=&width="
+                    alt="Jeans Azules">
+                <div class="inventory-details">
+                    <h2>Jeans Azules</h2>
+                    <p>Precio: <span>$40.00</span></p>
+                </div>
+                <button>
+                    Comprar
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="inventory-item">
+                <img src="https://falabella.scene7.com/is/image/FalabellaCO/123370377_1?wid=800&hei=800&qlt=70"
+                    alt="Chaqueta Negra">
+                <div class="inventory-details">
+                    <h2>Chaqueta Negra</h2>
+                    <p>Precio: <span>$60.00</span></p>
+                </div>
+                <button>
+                    Comprar
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="inventory-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDhYbAEM2pLlXjvmN9N2rychKnv8HYckL2zmuRiUqydA&s"
+                    alt="Sudadera Gris">
+                <div class="inventory-details">
+                    <h2>Sudadera Gris</h2>
+                    <p>Precio: <span>$30.00</span></p>
+                </div>
+                <button>
+                    Comprar
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+
+            <div class="inventory-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMa89lPlR2HJDl-PKmNb3NVJyL6lTOnt7myUztM68-8g&s"
+                    alt="Camisa de Cuadros">
+                <div class="inventory-details">
+                    <h2>Camisa de Cuadros</h2>
+                    <p>Precio: <span>$35.00</span></p>
+                </div>
+                <button>
+                    Comprar
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </div>
+
         </div>
     </section>
     <footer>

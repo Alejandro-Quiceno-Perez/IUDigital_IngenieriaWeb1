@@ -1,8 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 20px 80px;
     align-items: center;
-    margin: 10px 80px;
+    /* background-color: #0000007c; */
 }
 
 ul {
@@ -18,77 +27,18 @@ li {
 
 ul li a {
     text-decoration: none;
-}
-
-article {
-    margin: 0 auto;
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-section h1 {
-    text-align: center;
-}
-
-section button {
-    text-align: center;
-}
-
-div h2, div p {
-    text-align: center;
-}
-
-/* -- Cards -- */
-
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.inventory-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    margin: 20px;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.inventory-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.inventory-item img {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-}
-
-.inventory-details {
-    padding: 16px;
-    text-align: center;
-}
-
-.inventory-details h2 {
-    font-size: 1.5em;
-    margin: 0 0 10px 0;
-    color: #333;
-}
-
-.inventory-details p {
-    font-size: 1.2em;
-    color: #666;
-    margin: 0;
-}
-
-.inventory-details span {
-    color: #28a745;
+    color: black;
+    font-size: 20px;
     font-weight: bold;
+    transition: all .2s;
+}
+
+ul li a:hover {
+    color: #ff00009d;
+}
+
+svg {
+    color: #ff00009d;
+    font-size: 00px;
+    width: 50px;
 }

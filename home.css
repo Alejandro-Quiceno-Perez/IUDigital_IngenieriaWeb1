@@ -1,0 +1,51 @@
+/* -- Cards -- */
+
+.container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.inventory-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.inventory-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.inventory-item img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.inventory-details {
+    padding: 16px;
+    text-align: center;
+}
+
+.inventory-details h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.inventory-details p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 0;
+}
+
+.inventory-details span {
+    color: #28a745;
+    font-weight: bold;
+}
