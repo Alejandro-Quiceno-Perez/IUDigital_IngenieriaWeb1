@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 25px;
+}
+
+.container-logo h1 {
+    font-size: 50px;
+    font-family: "Shadows Into Light", cursive;
 }
 
 nav {
