@@ -33,18 +33,17 @@
 
     <section>
         <h1>New product</h1>
-        <form>
+        <form id="productForm">
             <label for="productName">Nombre del Producto:</label>
             <input type="text" id="productName" name="productName" >
-            <p id="mensajeErrorNombre" style="color: red;"></p>
+            <label class="msmError" id="msmErrorNombre"></label>
             <label for="productPrice">Precio:</label>
             <input type="number" id="productPrice" name="productPrice" min="0.01" step="0.01" >
-            <p id="mensajeErrorPrecio" style="color: red;"></p>
+            <label class="msmError" id="msmErrorPrecio"></label>
             <label for="productInventory">Inventario:</label>
             <input type="number" id="productInventory" name="productInventory" min="0" >
-            <p id="mensajeErrorInventario" style="color: red;"></p>
+            <label class="msmError" id="msmErrorInventario"></label>
             <input type="submit" value="Crear Producto" id="btn">
-            <p id="mensajeError" style="color: red;"></p>
         </form>
     </section>
     <script src="validation.js"></script>

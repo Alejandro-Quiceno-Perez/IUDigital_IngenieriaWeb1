@@ -1,47 +1,45 @@
-const btn = document.querySelector("#btn");
+const productForm = document.querySelector("#productForm");
 
-function validarFormulario() {
+productForm.addEventListener("submit", (e) => {
+    e.preventDefault();
     const nombreProducto = document.getElementById("productName");
     const precioProducto = document.getElementById("productPrice");
     const inventarioProducto = document.getElementById("productInventory");
-    const mensajeErrorNombre = document.getElementById("mensajeErrorNombre");
-    const mensajeErrorPrecio = document.getElementById("mensajeErrorPrecio");
-    const mensajeErrorInventario = document.getElementById("mensajeErrorInventario");
+    const msmErrorNombre = document.getElementById("msmErrorNombre");
+    const msmErrorPrecio = document.getElementById("msmErrorPrecio");
+    const msmErrorInventario = document.getElementById("msmErrorInventario");
 
-    if (nombreProducto.value.trim() === "") {
-        mensajeErrorNombre.textContent = "El nombre del producto es obligatorio.";
-        nombreProducto.focus();
-        return false;
+
+    if (nombreProducto.value && precioProducto.value && inventarioProducto.value) {
+        alert(`Se agrego correctamente
+            Nombre: ${nombreProducto.value}
+            Precio: ${precioProducto.value}
+            Inventario: ${inventarioProducto.value}`)
+
+        nombreProducto.value = "";
+        precioProducto.value = "";
+        inventarioProducto.value = "";
+
+        msmErrorNombre.textContent = ""
+        msmErrorPrecio.textContent = "";
+        msmErrorInventario.textContent = "";
+    } else {
+        if (!nombreProducto.value) {
+            msmErrorNombre.textContent = "Este campo es requerido"
+        } else {
+            msmErrorNombre.textContent = "";
+        }
+
+        if (!precioProducto.value) {
+            msmErrorPrecio.textContent = "Este campo es requerido"
+        } else {
+            msmErrorPrecio.textContent = "";
+        }
+
+        if (!inventarioProducto.value) {
+            msmErrorInventario.textContent = "Este campo es requerido"
+        } else {
+            msmErrorInventario.textContent = "";
+        }
     }
-
-    if (precioProducto.value.trim() === "" || parseFloat(precioProducto.value) <= 0) {
-        mensajeErrorPrecio.textContent = "El precio del producto es obligatorio y debe ser mayor a 0.";
-        precioProducto.focus();
-        return false;
-    }
-
-    if (inventarioProducto.value.trim() === "" || parseInt(inventarioProducto.value) < 0) {
-        mensajeErrorInventario.textContent = "El inventario del producto es obligatorio y no puede ser negativo.";
-        inventarioProducto.focus();
-        return false;
-
-        
-    }
-
-    alert(`PRODUCTO AGREGADO \n
-            Nombre: ${nombreProducto.value} \n
-            Precio: ${precioProducto.value}\n
-            Inventario: ${inventarioProducto.value}`);
-    mensajeErrorNombre.textContent = "";
-    mensajeErrorPrecio.textContent = "";
-    mensajeErrorInventario.textContent = "";
-
-    nombreProducto.value = "";
-    precioProducto.value = "";
-    inventarioProducto.value = "";
-}
-
-btn.addEventListener("click",  (e) => {
-    e.preventDefault();
-    validarFormulario();
 })
