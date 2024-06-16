@@ -28,13 +28,15 @@ function validarFormulario() {
         
     }
 
+    mensajeErrorNombre.textContent = "";
+    mensajeErrorPrecio.textContent = "";
+    mensajeErrorInventario.textContent = "";
+
     alert(`PRODUCTO AGREGADO \n
             Nombre: ${nombreProducto.value} \n
             Precio: ${precioProducto.value}\n
             Inventario: ${inventarioProducto.value}`);
-    mensajeErrorNombre.textContent = "";
-    mensajeErrorPrecio.textContent = "";
-    mensajeErrorInventario.textContent = "";
+    
 
     nombreProducto.value = "";
     precioProducto.value = "";
